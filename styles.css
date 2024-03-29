@@ -1,0 +1,205 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'AvenirRegular';
+    src: url('./fonts/AvenirRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvenirBook';
+    src: url('./fonts/AvenirBook.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AvenirLight';
+    src: url('./fonts/AvenirLight.ttf') format('truetype');
+}
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    font-size: 98px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'AvenirRegular', 'Arial Black', sans-serif;
+
+}
+h3 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'AvenirRegular', 'Arial Black', sans-serif;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    font-family: 'AvenirLight', 'Arial Black', sans-serif;
+    letter-spacing: 4px;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Example of a button style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for navigation links */
+/* nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+} */
+
+/* nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+} */
+
+.fixed-nav-home {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    width: 100%;
+    /* background-color: #333; */
+    padding: 10px 0;
+    text-align: left;
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+.fixed-nav-home a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fixed-nav-download {
+    position: fixed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    top: 40px;
+    right: 30px;
+    width: 100%;
+    text-align: right;
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Let's Chat button style */
+#chat-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#chat-button:hover {
+    background-color: #0056b3;
+}
+
+.container_header {
+    position: relative;
+    text-align: center;
+}
+.container_header img {
+    width: 100%;
+    display: block;
+}
+.black-overlay {
+    position: absolute; /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Set the white background */
+    opacity: 0.7; /* Adjust opacity as desired */
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    max-width: 100%;
+}
+
+.centered img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+}
+
+
+.about-me {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    background-color: white;
+    min-height: 500px;
+}
+
+/* #about-me {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+#about-me img {
+    max-width: 400px;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-content: center;
+} */
