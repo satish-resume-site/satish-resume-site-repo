@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Avenier";
+  src: url("../fonts/AvenirHeavy.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+@font-face {
+  font-family: "Avenier";
+  src: url("../fonts/AvenirRegular.ttf");
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Avenier";
+  src: url("../fonts/AvenirLight.ttf");
+  font-weight: 300;
+  font-display: block;
+}
+body {
+  font-family: "Avenier";
+  color: #070a0e;
+}
+
+.hero {
+  background-image: url(../images/header_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-position: 50% 50%;
+}
+
+.heroOverlay {
+  background: rgba(7, 10, 14, 0.5);
+}
+
+.sectionGap {
+  @apply py-[8vw];
+}
+.myContainer {
+  @apply w-[80%] mx-[auto];
+}
+
+.heading {
+  @apply text-[2.8vw] font-[700] uppercase pb-[0vw] relative inline-block;
+}
+.heading::after {
+  @apply content-[""] absolute bottom-[0.25vw] left-0 w-[35%] h-[0.25vw] bg-[#df3143];
+}
+
+.leading {
+  @apply text-[1.2vw]  font-[300];
+}
+
+.contentHeader {
+  @apply flex justify-between items-center mb-[4vw] cursor-pointer;
+}
+.toggleHeader {
+  @apply flex justify-between px-[2vw];
+}
+.toggleHeading {
+  @apply text-[1.8vw];
+}
+.toggleHeading span {
+  color: #df3143;
+}
+
+.toggleContainer {
+  @apply border-b border-b-[#797272] pb-[2vw];
+}
+.toggleContent ul {
+  @apply pt-[2vw] px-[2vw];
+}
+.toggleContent ul li {
+  @apply indent-[2vw] relative;
+}
+.toggleContent ul li img {
+  @apply w-[1.2vw] absolute top-[0.25vw] left-[0.2vw];
+}
+
+.toggleContent ul {
+  @apply flex flex-col gap-y-[1.2vw];
+}
+.toggleContent {
+  max-height: 0;
+  transition: 0.8s all;
+  overflow: hidden;
+}
+
+#plusIcon {
+  @apply transition-all duration-300 w-[2vw];
+}
+
+#plusIcon.active {
+  transform: rotate(90deg);
+}
+#plusIcon.active #plusLine {
+  display: none;
+}

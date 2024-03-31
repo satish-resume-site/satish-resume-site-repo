@@ -1,45 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr" class="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
+    <link rel="stylesheet" href="./assets/styles/output.css" />
+
     <title>Satish Karengula - DevOps Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta name="title" content="Satish Karengula - DevOps Engineer" />
+    <meta
+      name="keywords"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
 
-<header>
-    <nav class="fixed-nav-home">
-        <a href="#" >HOME</a>
-    </nav>
-    <nav class="fixed-nav-download">
-        <button id="download-resume">DOWNLOAD FULL RESUME</button>
-    </nav>
-    <div class="container_header">
-        <img src="header_bg.jpg" height="80%">
-        <div class="black-overlay"></div>
-        <div class="centered">
-            <h2>Satish Karengula</h2>
-            <h5>DevOps Engineer</h5>
-            <img src="profile-pic.jpg" alt="Satish Karengula"></img>
+    <meta
+      name="description"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="
+Satish Karengula - DevOps Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
+    <!-- <meta
+        property="og:image"
+        content="https://www.grandtransfer.io/assets/images/ogImage.jpg"
+      /> -->
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
+    <!-- Twitter -->
+    <meta
+      property="twitter:title"
+      content="
+Satish Karengula - DevOps Engineer"
+    />
+    <meta
+      property="twitter:description"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
+    <!-- <meta
+        property="twitter:image"
+        content="https://www.grandtransfer.io/assets/images/ogImage.jpg"
+      /> -->
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="630" />
+    <meta
+      property="twitter:image:alt"
+      content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./assets/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <main>
+      <section
+        class="bg-blue-300 h-[400px] md:h-[60vh] relative hero flex items-center justify-center"
+      >
+        <span class="heroOverlay absolute top-0 left-0 w-full h-full"></span>
+        <div
+          class="w-[150px] md:w-[15vw] h-[150px] md:h-[15vw] rounded-full p-[2.5px] md:p-[0.25vw] bg-white overflow-hidden absolute bottom-[-75px] md:bottom-[-7.5vw] left-[50%] transform translate-x-[-50%]"
+        >
+          <img
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            src="./assets/images/profile-pic.jpg"
+            alt="Satish"
+            class="w-full rounded-full"
+          />
         </div>
-        <div class="about-me">
-            <h3>ABOUT ME</h3>
-            <p>Welcome to my corner of the web! With a strong background in Azure and DevOps, I strive to...</p>
+        <div class="relative text-white text-center">
+          <h1
+            id="heading"
+            data-aos="fade-up"
+            class="md:text-[4.4vw] text-[32px] font-[700]"
+          >
+            Satish Karengula
+          </h1>
+          <p
+            data-aos="fade-down"
+            class="text-[#94a3ba] font-[300] text-[18px] tracking-[3px] md:text-[1.25vw] md:tracking-[0.25vw]"
+          >
+            DevOps Engineer
+          </p>
         </div>
-    </div>
+      </section>
+      <section class="sectionGap mt-[4vw]">
+        <div class="myContainer">
+          <div
+            class="contentHeader"
+            data-aos="fade-up"
+            data-aos-anchor="heading"
+          >
+            <h4 class="heading">About Me</h4>
+            <div class="flex gap-x-[0.8vw]">
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/icons/facebook.webp"
+                  alt="Facebook"
+                  class="w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/icons/linkedin.webp"
+                  alt="linkedin"
+                  class="w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/icons/twitter.webp"
+                  alt="twitter"
+                  class="w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-between leading">
+            <p class="w-[46%]" data-aos="fade-right">
+              Welcome to my corner of the web! With a strong background in
+              DevOps, DevSecOps, and cloud architectures across Azure and AWS,
+              my journey is marked by success and continuous learning. Explore
+              my skills, strengths, and achievements to see how innovation and
+              excellence propel my work.
+            </p>
+            <p class="w-[46%]" data-aos="fade-left">
+              Mastering cloud technologies, DevOps, and DevSecOps, I specialize
+              in architecting scalable cloud solutions across Azure and AWS.
+              With expertise in Kubernetes, Terraform, Ansible, automation with
+              Python & shell scripting, and CI/CD pipelines, I ensure efficient,
+              secure, and cost-effective deployments.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sectionGap">
+        <div class="myContainer">
+          <div
+            class="contentHeader"
+            data-aos="fade-up"
+            data-aos-anchor="heading"
+          >
+            <h4 class="heading">Experience</h4>
+          </div>
+          <div data-aos="fade-up" class="flex flex-col gap-y-[3vw]">
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  DevOps Engineer @UBS AG Singapore
 
-
-</header>
-
-
-
-<footer>
-    <!-- Footer content goes here, including a "Let's Chat!" button -->
-</footer>
-
-<script src="script.js"></script>
-<!-- Include JS file for any interactive elements -->
-
-</body>
+                  <span>(2020 - Current)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Worked closely with key stakeholders including developers,
+                    architects and project managers across all stages of
+                    deployment such as Integration, Test, Staging and
+                    Production.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Built continuous integration and continuous deployment
+                    (CI/CD) pipelines using Jenkins, GitLab and resource
+                    deployments using ARM templates.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Participate in the Agile DevOps design, development,
+                    testing, and release of new capabilities and features.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Involved in redesigning Monolithic application to micro
+                    services, deployed and orchestrated them using Kubernetes,
+                    Pivotal Cloud Foundry.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Configuring and supporting the DevOps tools including Git,
+                    GitLab, maven, Ansible, Puppet, Nexus Artifactory,
+                    SonarQube.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for writing Ansible playbooks with Jinja2
+                    templates (dynamic configuration) for deployments on both
+                    onpremises and Cloud platforms like Azure.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for ensuring additional security with firewalld
+                    configuration using puppet for Digital Banking applications.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Participating in deploying, automating, maintaining and
+                    managing Azure cloud based production systems to ensure the
+                    availability, performance, scalability and security of
+                    productions systems.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Integrating applications with monitoring tools like
+                    AppDynamics, Splunk, Prometheus, Grafana.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Proactively communicate and coordinate with multiple project
+                    teams.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  Linux Infrastructure/Operations Engineer @Infosys Ltd
+                  <span>(2016 - 2020)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Worked on Administration, installation and maintenance of
+                    the physical and virtual IT infrastructure.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for application availability and stability and
+                    perform maintenance activities.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Worked on application deployments to Cloud, Pivotal
+                    CloudFoundry and on-premise servers.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for conducting Linux Servers OS patching,
+                    Middleware patching, Certificate handling and ensuring
+                    smooth application experience to end users.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for handling and driving Incidents on PRODUCTION
+                    and TEST environments, following up for permanent fixes
+                    (Problem Management) with Development teams.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Proactive monitoring of applications using AppDynamics,
+                    Splunk, Abilisoft, Kibana, etc.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for solving bottlenecks in Infrastructure like
+                    high utilization of CPU, Disk, Memory, JVM Heap etc.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Worked on Autosys scheduler for End of the day (EoD) and
+                    Start of the Day batch jobs.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Involved in Release Management/Change Management activities
+                    such as gatekeeping the deployments to TEST and PRODUCTION
+                    systems.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Automated several operational tasks using Ansible playbooks,
+                    Python and Bash scripting.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Knowledge in Networking, Firewalls, Load Balancers, Proxies,
+                    Web and App Servers, Message Streaming, Databases, etc
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  System Engineer @Infosys Ltd <span>(2013 - 2016)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Worked on Microsoft Volume Licensing suite of applications
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for handling business queries from Clients of
+                    Microsoft about licensing and agreements.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Responsible for executing MSSQL queries, writing ad-hoc SQL
+                    queries, generating reports.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Contributed in building automated tool to execute SQL
+                    updates with maker-checker (dual control) process.
+                  </li>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    Good understanding on IT Operations, ITIL Processes,
+                    Policies, and Compliance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <script src="./assets/js/swiper-bundle.min.js"></script> -->
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/global.js"></script>
+  </body>
 </html>
