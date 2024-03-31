@@ -39,51 +39,51 @@ body {
 }
 
 .sectionGap {
-  @apply py-[8vw];
+  @apply py-[80px] md:py-[8vw];
 }
 .myContainer {
-  @apply w-[80%] mx-[auto];
+  @apply w-[90%] md:w-[80%] mx-[auto];
 }
 
 .heading {
-  @apply text-[2.8vw] font-[700] uppercase pb-[0vw] relative inline-block;
+  @apply text-[24px] md:text-[2.8vw] font-[700] uppercase pb-[0vw] relative inline-block;
 }
 .heading::after {
-  @apply content-[""] absolute bottom-[0.25vw] left-0 w-[35%] h-[0.25vw] bg-[#df3143];
+  @apply content-[""] absolute bottom-0 md:bottom-[0.25vw] left-0 w-[35%] h-[3px] md:h-[0.25vw] bg-[#df3143];
 }
 
 .leading {
-  @apply text-[1.2vw]  font-[300];
+  @apply text-[16px] md:text-[1.2vw]  font-[300];
 }
 
 .contentHeader {
-  @apply flex justify-between items-center mb-[4vw] cursor-pointer;
+  @apply flex justify-between items-center mb-[32px] md:mb-[4vw];
 }
 .toggleHeader {
-  @apply flex justify-between px-[2vw];
+  @apply flex justify-between md:px-[2vw] cursor-pointer;
 }
 .toggleHeading {
-  @apply text-[1.8vw];
+  @apply text-[18px] md:text-[1.8vw];
 }
 .toggleHeading span {
   color: #df3143;
 }
 
 .toggleContainer {
-  @apply border-b border-b-[#797272] pb-[2vw];
+  @apply border-b border-b-[#797272] pb-[20px] md:pb-[2vw];
 }
 .toggleContent ul {
-  @apply pt-[2vw] px-[2vw];
+  @apply pt-[20px] md:pt-[2vw] md:px-[2vw];
 }
 .toggleContent ul li {
-  @apply indent-[2vw] relative;
+  @apply indent-[20px] md:indent-[2vw] relative;
 }
 .toggleContent ul li img {
-  @apply w-[1.2vw] absolute top-[0.25vw] left-[0.2vw];
+  @apply top-[5px] left-[2px] w-[14px] md:w-[1.2vw] absolute md:top-[0.25vw] md:left-[0.2vw];
 }
 
 .toggleContent ul {
-  @apply flex flex-col gap-y-[1.2vw];
+  @apply flex flex-col gap-y-[12px] md:gap-y-[1.2vw] leading;
 }
 .toggleContent {
   max-height: 0;
@@ -92,7 +92,7 @@ body {
 }
 
 #plusIcon {
-  @apply transition-all duration-300 w-[2vw];
+  @apply transition-all duration-300 min-w-[22px] w-[22px] md:min-w-[2vw] md:w-[2vw];
 }
 
 #plusIcon.active {

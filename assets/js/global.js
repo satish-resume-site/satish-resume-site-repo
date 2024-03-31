@@ -1,6 +1,6 @@
 AOS.init({ once: true });
 
-document.querySelectorAll(".toggleContainer").forEach((item) => {
+document.querySelectorAll(".toggleHeader").forEach((item) => {
   item.addEventListener("click", () => {
     const offsetHeight =
       item.parentElement.querySelector(".toggleContent ul").offsetHeight;
