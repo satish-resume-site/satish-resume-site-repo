@@ -8,7 +8,6 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
     />
 
-    <!-- <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./assets/styles/aos.css" />
     <link rel="stylesheet" href="./assets/styles/output.css" />
 
@@ -34,11 +33,8 @@ Satish Karengula - DevOps Engineer"
       property="og:description"
       content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
     />
-    <!-- <meta
-        property="og:image"
-        content="https://www.grandtransfer.io/assets/images/ogImage.jpg"
-      /> -->
-    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image" content="/assets/images/og_img.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
@@ -48,17 +44,13 @@ Satish Karengula - DevOps Engineer"
     <!-- Twitter -->
     <meta
       property="twitter:title"
-      content="
-Satish Karengula - DevOps Engineer"
+      content=" Satish Karengula - DevOps Engineer"
     />
     <meta
       property="twitter:description"
       content="Welcome to my corner of the web! With a strong background in DevOps, DevSecOps, and cloud architectures across Azure and AWS, my journey is marked by success and continuous learning. Explore my skills, strengths, and achievements to see how innovation and excellence propel my work"
     />
-    <!-- <meta
-        property="twitter:image"
-        content="https://www.grandtransfer.io/assets/images/ogImage.jpg"
-      /> -->
+    <meta property="twitter:image" content="/assets/images/og_img.png" />
     <meta property="twitter:image:width" content="1200" />
     <meta property="twitter:image:height" content="630" />
     <meta
@@ -98,13 +90,67 @@ Satish Karengula - DevOps Engineer"
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <header
+      class="absolute top-0 z-[55] w-[100%] pt-[15px] md:pt-[1vw] large:pt-[19.2px] text-white"
+    >
+      <div
+        class="myContainer py-[8px] md:py-[0.5vw] large:py-[10px] flex items-center justify-between leading sidebar"
+      >
+        <nav
+          class="uppercase flex gap-x-[1.2vw] large:gap-x-[20px] tracking-[2px] md:tracking-[0.1vw] large:tracking-[2px]"
+        >
+          <span
+            onclick="handleSectionScroll('home')"
+            class="cursor-pointer hover:text-[#da532c] active"
+            >Home</span
+          >
+          <span
+            onclick="handleSectionScroll('about')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >About</span
+          >
+          <span
+            onclick="handleSectionScroll('skills')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >Skills</span
+          >
+          <span
+            onclick="handleSectionScroll('experience')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >Experience</span
+          >
+          <span
+            onclick="handleSectionScroll('certifications')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >Certifications</span
+          >
+          <span
+            onclick="handleSectionScroll('education')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >Education</span
+          >
+          <span
+            onclick="handleSectionScroll('contact')"
+            class="cursor-pointer hover:text-[#da532c]"
+            >Contact</span
+          >
+        </nav>
+        <a
+          href="./assets/pdfs/Satish_Karengula_11yrs_DevOps.pdf"
+          class="py-[0.3vw] large:py-[6px] border border-[#da532c] px-[1vw] large:px-[19.2px] text-[#da532c] hover:bg-[#fff] hover:border-[#fff] transition-all duartion-300 downloadBtn"
+        >
+          Download My Resume
+        </a>
+      </div>
+    </header>
     <main>
       <section
-        class="bg-blue-300 h-[400px] md:h-[60vh] relative hero flex items-center justify-center"
+        id="home"
+        class="bg-blue-300 h-[400px] md:h-[33.75vw] large:h-[648px] relative hero flex items-center justify-center"
       >
         <span class="heroOverlay absolute top-0 left-0 w-full h-full"></span>
         <div
-          class="w-[150px] md:w-[15vw] h-[150px] md:h-[15vw] rounded-full p-[2.5px] md:p-[0.25vw] bg-white overflow-hidden absolute bottom-[-75px] md:bottom-[-7.5vw] left-[50%] transform translate-x-[-50%]"
+          class="large:w-[288px] large:h-[288px] large:p-[4.88px] w-[150px] md:w-[15vw] h-[150px] md:h-[15vw] rounded-full p-[2.5px] md:p-[0.25vw] bg-white overflow-hidden absolute bottom-[-75px] md:bottom-[-7.5vw] large:bottom-[-144px] left-[50%] transform translate-x-[-50%]"
         >
           <img
             data-aos="zoom-in"
@@ -118,19 +164,22 @@ Satish Karengula - DevOps Engineer"
           <h1
             id="heading"
             data-aos="fade-up"
-            class="md:text-[4.4vw] text-[32px] font-[700]"
+            class="large:text-[84px] md:text-[4.4vw] text-[32px] font-[700]"
           >
             Satish Karengula
           </h1>
           <p
             data-aos="fade-down"
-            class="text-[#94a3ba] font-[300] text-[18px] tracking-[3px] md:text-[1.25vw] md:tracking-[0.25vw]"
+            class="text-[#94a3ba] font-[300] large:text-[24px] large:tracking-[4.8px] text-[18px] tracking-[3px] md:text-[1.25vw] md:tracking-[0.25vw]"
           >
             DevOps Engineer
           </p>
         </div>
       </section>
-      <section class="sectionGap mt-[40px] md:mt-[4vw]">
+      <section
+        id="about"
+        class="sectionGap mt-[40px] md:mt-[4vw] large:mt-[76px]"
+      >
         <div class="myContainer">
           <div
             class="contentHeader"
@@ -138,39 +187,39 @@ Satish Karengula - DevOps Engineer"
             data-aos-anchor="heading"
           >
             <h4 class="heading">About Me</h4>
-            <div class="flex gap-x-[8px] md:gap-x-[0.8vw]">
+            <div class="flex gap-x-[8px] md:gap-x-[0.8vw] large:gap-x-[15px]">
               <a href="#" target="_blank">
                 <img
                   src="./assets/images/icons/facebook.webp"
                   alt="Facebook"
-                  class="w-[20px] md:w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                  class="w-[20px] md:w-[2.2vw] large:w-[42px] hover:opacity-[0.6] transition-all duration-300"
                 />
               </a>
               <a href="#" target="_blank">
                 <img
                   src="./assets/images/icons/linkedin.webp"
                   alt="linkedin"
-                  class="w-[20px] md:w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                  class="w-[20px] md:w-[2.2vw] large:w-[42px] hover:opacity-[0.6] transition-all duration-300"
                 />
               </a>
               <a href="#" target="_blank">
                 <img
                   src="./assets/images/icons/twitter.webp"
                   alt="twitter"
-                  class="w-[20px] md:w-[2.2vw] hover:opacity-[0.6] transition-all duration-300"
+                  class="w-[20px] md:w-[2.2vw] large:w-[42px] hover:opacity-[0.6] transition-all duration-300"
                 />
               </a>
             </div>
           </div>
           <div class="flex justify-between leading flex-wrap gap-y-[20px]">
-            <p class="w-full md:w-[46%]" data-aos="fade-right">
+            <p class="w-full md:w-[46%] large:w-[706px]" data-aos="fade-right">
               Welcome to my corner of the web! With a strong background in
               DevOps, DevSecOps, and cloud architectures across Azure and AWS,
               my journey is marked by success and continuous learning. Explore
               my skills, strengths, and achievements to see how innovation and
               excellence propel my work.
             </p>
-            <p class="w-full md:w-[46%]" data-aos="fade-left">
+            <p class="w-full md:w-[46%] large:w-[706px]" data-aos="fade-left">
               Mastering cloud technologies, DevOps, and DevSecOps, I specialize
               in architecting scalable cloud solutions across Azure and AWS.
               With expertise in Kubernetes, Terraform, Ansible, automation with
@@ -180,16 +229,130 @@ Satish Karengula - DevOps Engineer"
           </div>
         </div>
       </section>
-      <section class="sectionGap">
+      <section id="skills" class="sectionGap skillsSection relative">
+        <span class="heroOverlay absolute top-0 left-0 w-full h-full"></span>
+        <div class="myContainer relative">
+          <div class="contentHeader" data-aos="fade-up">
+            <h4 class="heading headingWhite">Skills</h4>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap justify-center">
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#edeff5] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#df3143]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#bbc8dd] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#2e4975]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#edeff5] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#df3143]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#bbc8dd] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#2e4975]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#bbc8dd] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#2e4975]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#edeff5] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#df3143]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#bbc8dd] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#2e4975]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-[50%] md:w-[25%] h-[150px] md:h-[20vw] large:h-[384px] bg-[#edeff5] flex items-center justify-center text-center"
+            >
+              <div class="content flex flex-col">
+                <span class="text-[14px] md:text-[1.4vw] large:text-[26px]">
+                  Kubernetes
+                </span>
+                <span
+                  class="text-[20px] md:text-[2.4vw] large:text-[46px] font-[700] text-[#df3143]"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="sectionGap">
         <div class="myContainer">
-          <div
-            class="contentHeader"
-            data-aos="fade-up"
-            data-aos-anchor="heading"
-          >
+          <div class="contentHeader" data-aos="fade-up">
             <h4 class="heading">Experience</h4>
           </div>
-          <div data-aos="fade-up" class="flex flex-col gap-y-[3vw]">
+          <div
+            data-aos="fade-up"
+            class="flex flex-col gap-y-[30px] md:gap-y-[3vw] large:gap-y-[57px]"
+          >
             <div class="toggleContainer">
               <div class="toggleHeader">
                 <div class="toggleHeading">
@@ -480,7 +643,353 @@ Satish Karengula - DevOps Engineer"
           </div>
         </div>
       </section>
+      <section id="certifications" class="sectionGap">
+        <div class="myContainer">
+          <div class="contentHeader" data-aos="fade-up">
+            <h4 class="heading">Certifications</h4>
+          </div>
+          <div class="flex justify-between">
+            <a
+              data-aos="fade"
+              data-aos-delay="00"
+              href="https://www.credly.com/badges/e5b6a513-4ee7-45e9-9539-4e6a224e4e5f"
+              target="_blank"
+              class="w-[25%]"
+            >
+              <img
+                src="./assets/images/certifications/1.png"
+                alt="Microsoft Certificate for Azure Fundamentals"
+                class="w-full"
+              />
+            </a>
+            <a
+              data-aos="fade"
+              data-aos-delay="100"
+              href="https://www.credly.com/badges/86d80fee-77ec-4289-8e21-bf1652679bdc/public_url"
+              target="_blank"
+              class="w-[25%]"
+            >
+              <img
+                src="./assets/images/certifications/2.png"
+                alt="Microsoft Certificate for Azure Administrator"
+                class="w-full"
+              />
+            </a>
+            <a
+              data-aos="fade"
+              data-aos-delay="200"
+              href="https://www.credly.com/badges/ea1491c1-d22c-45b9-be43-89ea52510070"
+              target="_blank"
+              class="w-[25%]"
+            >
+              <img
+                src="./assets/images/certifications/3.png"
+                alt="Aws Certificate for DevOps Engineer"
+                class="w-full"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="sectionGap">
+        <div class="myContainer">
+          <div class="contentHeader" data-aos="fade-up">
+            <h4 class="heading">Education</h4>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="flex flex-col gap-y-[30px] md:gap-y-[3vw] large:gap-y-[57px]"
+          >
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  Degree or Course Name @School
+
+                  <span>( Year - Year)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    This is a description of our education. We have acquired
+                    various degrees and certificates that have enabled us to
+                    develop our skills and expertise in the field of Other.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  Degree or Course Name @School
+
+                  <span>( Year - Year)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    This is a description of our education. We have acquired
+                    various degrees and certificates that have enabled us to
+                    develop our skills and expertise in the field of Other.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggleContainer">
+              <div class="toggleHeader">
+                <div class="toggleHeading">
+                  Degree or Course Name @School
+
+                  <span>( Year - Year)</span>
+                </div>
+                <svg
+                  id="plusIcon"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18.1704" r="18" fill="#190041" />
+                  <g clip-path="url(#clip0_811_231)">
+                    <rect
+                      id="plusLine"
+                      x="10"
+                      y="17.1704"
+                      width="16"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="10.1704"
+                      width="2"
+                      height="16"
+                      rx="1"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_811_231">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(10 10.1704)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="toggleContent">
+                <ul>
+                  <li>
+                    <img src="./assets/images/icons/this.svg" alt="icon" />
+                    This is a description of our education. We have acquired
+                    various degrees and certificates that have enabled us to
+                    develop our skills and expertise in the field of Other.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="sectionGap bg-[#bbc8dd]">
+        <div class="w-[90%] md:w-[55%] large:w-[1056px] mx-auto">
+          <div class="contentHeader" data-aos="fade-up">
+            <h4 class="heading centeredHeading">Contact Me</h4>
+          </div>
+          <form
+            id="contactForm"
+            class="flex flex-wrap justify-between gap-y-[20px] md:gap-y-[2vw] large:gap-y-[38px]"
+          >
+            <div
+              class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-[100%] md:w-[48%] flex flex-col"
+            >
+              <label for="" class="leading" style="font-weight: 700"
+                >First Name</label
+              >
+              <input
+                type="text"
+                placeholder="Type Your First Name..."
+                class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
+              />
+            </div>
+            <div
+              class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-[100%] md:w-[48%] flex flex-col"
+            >
+              <label for="" class="leading" style="font-weight: 700"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                placeholder="Type Your Last Name..."
+                class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
+              />
+            </div>
+            <div
+              class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-full flex flex-col"
+            >
+              <label for="" class="leading" style="font-weight: 700"
+                >Subject</label
+              >
+              <input
+                type="text"
+                placeholder="Type Your Subject..."
+                class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
+              />
+            </div>
+            <div
+              class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-full flex flex-col"
+            >
+              <label for="" class="leading" style="font-weight: 700"
+                >Message</label
+              >
+              <textarea
+                name="subject"
+                id="subject"
+                class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px] h-[120px] md:h-[12vw] large:h-[230px]"
+                placeholder="Type Your Message..."
+              ></textarea>
+            </div>
+            <div class="w-full flex justify-center">
+              <button
+                class="leading hover:opacity-[0.6] transition-all duartion-300 px-[40px] md:px-[4vw] large:px-[76.80px] bg-[#2e4975] flex items-center h-[40px] md:h-[3vw] large:h-[60px] text-white"
+                style="font-weight: 700"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="bg-[#2e4975] text-white">
+      <div
+        class="myContainer flex justify-between font-[300] items-center md:h-[2.5vw] text-[14px] md:text-[1vw] large:h-[38px] large:text-[19.2px]"
+      >
+        <a
+          href="./assets/pdfs/Satish_Karengula_11yrs_DevOps.pdf"
+          class="hover:opacity-[0.7]"
+          download
+        >
+          Download My <span class="text-[#da532c]">Full Resume</span>
+        </a>
+        <div class="flex gap-x-[12px] md:gap-x-[1vw]">
+          <a target="_blank" class="hover:opacity-[0.7]" href="tel:+6581487357">
+            ☎ +65 81487357
+          </a>
+          <a
+            target="_blank"
+            class="hover:opacity-[0.7]"
+            href="mailto:satish.karengula@gmail.com"
+          >
+            ✉ satish.karengula@gmail.com
+          </a>
+        </div>
+
+        <div class="flex gap-x-[6px] md:gap-x-[0.6vw] large:gap-x-[12px]">
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/icons/facebook.svg"
+              alt="Facebook"
+              class="w-[16px] md:w-[1.6vw] large:w-[24px] hover:opacity-[0.6] transition-all duration-300"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/icons/linkedin.svg"
+              alt="linkedin"
+              class="w-[16px] md:w-[1.6vw] large:w-[24px] hover:opacity-[0.6] transition-all duration-300"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/icons/twitter.svg"
+              alt="twitter"
+              class="w-[16px] md:w-[1.6vw] large:w-[42px] hover:opacity-[0.6] transition-all duration-300"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
     <!-- <script src="./assets/js/swiper-bundle.min.js"></script> -->
     <script src="./assets/js/aos.min.js"></script>
     <script src="./assets/js/global.js"></script>
