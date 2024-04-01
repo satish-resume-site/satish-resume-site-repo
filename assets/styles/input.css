@@ -51,9 +51,12 @@ body {
 .myContainer {
   @apply w-[90%] md:w-[80%] large:w-[1536px] mx-[auto];
 }
+.haflContainer {
+  @apply w-[100%] md:w-[80%] large:w-[768px];
+}
 
 .heading {
-  @apply text-[24px] md:text-[2.8vw] large:text-[54px] font-[700] uppercase pb-[0vw] relative inline-block;
+  @apply text-[24px] md:text-[2.4vw] large:text-[46px] font-[700] uppercase pb-[0vw] relative inline-block;
 }
 .centeredHeading {
   @apply mx-auto;
@@ -86,7 +89,7 @@ nav span.active {
   @apply flex justify-between large:px-[38px] md:px-[2vw] cursor-pointer;
 }
 .toggleHeading {
-  @apply text-[18px] md:text-[1.3vw] large:text-[26px];
+  @apply text-[18px] md:text-[1.5vw] large:text-[30px];
 }
 .toggleHeading span {
   color: #df3143;
