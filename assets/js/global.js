@@ -17,7 +17,12 @@ document.querySelectorAll(".toggleHeader").forEach((item) => {
     tarEl.classList.toggle("active");
   });
 });
+const sidebar = document.querySelector(".sidebar");
 
+const handleSideBar = () => {
+  sidebar.classList.toggle("active");
+  document.body.classList.toggle("active");
+};
 const header = document.querySelector("header");
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll("nav span");
@@ -36,6 +41,7 @@ const handleSectionScroll = (id) => {
   const targetElement = document.getElementById(id);
   targetElement.scrollIntoView({ behavior: "smooth" });
   handleNavItem(id);
+  handleSideBar();
 };
 
 function checkCurrentSection() {

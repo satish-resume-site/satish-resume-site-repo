@@ -693,6 +693,10 @@ video {
   isolation: auto;
 }
 
+.z-\[32134\] {
+  z-index: 32134;
+}
+
 .z-\[55\] {
   z-index: 55;
 }
@@ -891,6 +895,10 @@ video {
 
 .w-\[25\%\] {
   width: 25%;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .w-\[50\%\] {
@@ -3076,6 +3084,15 @@ nav span.active {
     transform: translateX(100%);
   }
 
+  body.active {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    transform: translateX(0%);
+  }
+
   .sidebar nav {
     flex-direction: column;
     width: 90%;
@@ -3085,7 +3102,7 @@ nav span.active {
   .sidebar nav span {
     width: 100%;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     border-bottom: 1px solid #fff;
   }
 
@@ -3204,6 +3221,10 @@ nav span.active {
 
   .md\:mt-\[4vw\] {
     margin-top: 4vw;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[12vw\] {
