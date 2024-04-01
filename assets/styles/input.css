@@ -76,7 +76,7 @@ nav span.active {
   @apply left-[50%] transform translate-x-[-50%];
 }
 .leading {
-  @apply text-[16px] md:text-[1.2vw]  font-[300] large:text-[23.4px];
+  @apply text-[16px] md:text-[1vw]  font-[300] large:text-[19.2px];
 }
 
 .contentHeader {
@@ -86,7 +86,7 @@ nav span.active {
   @apply flex justify-between large:px-[38px] md:px-[2vw] cursor-pointer;
 }
 .toggleHeading {
-  @apply text-[18px] md:text-[1.8vw] large:text-[34.5px];
+  @apply text-[18px] md:text-[1.3vw] large:text-[26px];
 }
 .toggleHeading span {
   color: #df3143;
