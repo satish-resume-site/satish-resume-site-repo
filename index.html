@@ -654,10 +654,12 @@ Satish Karengula - DevOps Engineer"
           </div>
         </div>
       </section>
-      <section id="certifications" class="sectionGap">
+      <section id="certifications" class="sectionGap hero relative">
+        <span class="heroOverlay absolute top-0 left-0 w-full h-full"></span>
+
         <div class="myContainer">
           <div class="contentHeader" data-aos="fade-up">
-            <h4 class="heading">Certifications</h4>
+            <h4 class="heading headingWhite">Certifications</h4>
           </div>
           <div class="flex justify-between">
             <a
@@ -665,7 +667,7 @@ Satish Karengula - DevOps Engineer"
               data-aos-delay="00"
               href="https://www.credly.com/badges/e5b6a513-4ee7-45e9-9539-4e6a224e4e5f"
               target="_blank"
-              class="w-[25%]"
+              class="w-[18%]"
             >
               <img
                 src="./assets/images/certifications/1.png"
@@ -678,7 +680,7 @@ Satish Karengula - DevOps Engineer"
               data-aos-delay="100"
               href="https://www.credly.com/badges/86d80fee-77ec-4289-8e21-bf1652679bdc/public_url"
               target="_blank"
-              class="w-[25%]"
+              class="w-[18%]"
             >
               <img
                 src="./assets/images/certifications/2.png"
@@ -691,11 +693,24 @@ Satish Karengula - DevOps Engineer"
               data-aos-delay="200"
               href="https://www.credly.com/badges/ea1491c1-d22c-45b9-be43-89ea52510070"
               target="_blank"
-              class="w-[25%]"
+              class="w-[18%]"
             >
               <img
                 src="./assets/images/certifications/3.png"
                 alt="Aws Certificate for DevOps Engineer"
+                class="w-full"
+              />
+            </a>
+            <a
+              data-aos="fade"
+              data-aos-delay="200"
+              href="https://www.credly.com/badges/13d32be6-c843-4143-9217-eaba6059e8dc/linked_in?t=sa2nhh"
+              target="_blank"
+              class="w-[18%]"
+            >
+              <img
+                src="./assets/images/certifications/4.png"
+                alt="Certified Kubernetes Administrator"
                 class="w-full"
               />
             </a>
@@ -888,54 +903,82 @@ Satish Karengula - DevOps Engineer"
             <h4 class="heading centeredHeading">Contact Me</h4>
           </div>
           <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
             id="contactForm"
             class="flex flex-wrap justify-between gap-y-[20px] md:gap-y-[2vw] large:gap-y-[38px]"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f14633d4-6b1e-4b59-b63d-fa6bcd984f23"
+            />
             <div
               class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-[100%] md:w-[48%] flex flex-col"
             >
-              <label for="" class="leading" style="font-weight: 700"
+              <label for="firsName" class="leading" style="font-weight: 700"
                 >First Name</label
               >
               <input
                 type="text"
                 placeholder="Type Your First Name..."
+                name="firstName"
+                required
                 class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
               />
             </div>
             <div
               class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-[100%] md:w-[48%] flex flex-col"
             >
-              <label for="" class="leading" style="font-weight: 700"
+              <label for="lastName" class="leading" style="font-weight: 700"
                 >Last Name</label
               >
               <input
                 type="text"
                 placeholder="Type Your Last Name..."
+                name="lastName"
+                required
                 class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
               />
             </div>
             <div
               class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-full flex flex-col"
             >
-              <label for="" class="leading" style="font-weight: 700"
+              <label for="email" class="leading" style="font-weight: 700"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Type Your Email..."
+                class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
+              />
+            </div>
+            <div
+              class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-full flex flex-col"
+            >
+              <label for="subject" class="leading" style="font-weight: 700"
                 >Subject</label
               >
               <input
                 type="text"
+                name="subject"
+                required
                 placeholder="Type Your Subject..."
                 class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px]"
               />
             </div>
+
             <div
               class="inputWrapper gap-y-[4px] md:gap-y-[0.2vw] large:gap-y-[3.84px] w-full flex flex-col"
             >
-              <label for="" class="leading" style="font-weight: 700"
+              <label for="message" class="leading" style="font-weight: 700"
                 >Message</label
               >
               <textarea
-                name="subject"
-                id="subject"
+                name="message"
+                required
                 class="leaading w-full outline-none px-[10px] py-[6px] md:px-[1vw] md:py-[0.6vw] large:px-[19.2px] large:py-[11.520px] h-[120px] md:h-[12vw] large:h-[230px]"
                 placeholder="Type Your Message..."
               ></textarea>
